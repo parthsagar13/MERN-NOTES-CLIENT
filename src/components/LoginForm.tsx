@@ -47,7 +47,7 @@ const LoginForm = () => {
                     "Login-token": localStorage.getItem("token") || "",
                 }
             }
-            const res = await axios.post(`http://localhost:5000/api/auth/login`, data, options)
+            const res = await axios.post(`https://mern-app-notes-server.onrender.com/api/auth/login`, data, options)
             localStorage.setItem("token", res.data.authToken);
 
             toast.success(res.data.message)

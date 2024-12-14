@@ -53,9 +53,9 @@ const NotesForm: FC<NotesFormProps> = ({ initialData, handleSubmit }) => {
                 }
             }
             if (initialData) {
-                await axios.put(`http://localhost:5000/api/notes/updatenote/${initialData._id}`, data, options)
+                await axios.put(`https://mern-app-notes-server.onrender.com/api/notes/updatenote/${initialData._id}`, data, options)
             } else {
-                await axios.post(`http://localhost:5000/api/notes/addnote`, data, options)
+                await axios.post(`https://mern-app-notes-server.onrender.com/api/notes/addnote`, data, options)
             }
             toast.success(toastMessage)
             fetchNotes()

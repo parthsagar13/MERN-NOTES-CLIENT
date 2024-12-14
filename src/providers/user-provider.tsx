@@ -28,7 +28,7 @@ const UserProvider: FC<UserProviderProps> = ({ children }) => {
     const navigate = useNavigate();
 
     const signUp = async (userData: NewUser) => {
-        const response = await fetch(`http://localhost:5000/api/auth/createuser`, {
+        const response = await fetch(`https://mern-app-notes-server.onrender.com/api/auth/createuser`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const UserProvider: FC<UserProviderProps> = ({ children }) => {
     };
 
     const logIn = async (userData: User) => {
-        const response = await fetch(`http://localhost:5000/api/auth/login`, {
+        const response = await fetch(`https://mern-app-notes-server.onrender.com/api/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

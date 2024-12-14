@@ -39,7 +39,7 @@ const NoteProvider: FC<NoteProviderProps> = ({ children }) => {
         const headers: HeadersInit = {
             "auth-token": localStorage.getItem("token") || "",
         }
-        const response = await fetch(`http://localhost:5000/api/notes/fetchallnotes`, {
+        const response = await fetch(`https://mern-app-notes-server.onrender.com/api/notes/fetchallnotes`, {
             method: "GET",
             headers
         });
@@ -48,7 +48,7 @@ const NoteProvider: FC<NoteProviderProps> = ({ children }) => {
     };
 
     const deleteNote = async (id: string) => {
-        const response = await fetch(`http://localhost:5000/api/notes/deletenote/${id}`, {
+        const response = await fetch(`https://mern-app-notes-server.onrender.com/api/notes/deletenote/${id}`, {
             method: "DELETE",
             headers,
         });

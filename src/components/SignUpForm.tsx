@@ -62,7 +62,7 @@ const SignUpForm = () => {
                     "Login-token": localStorage.getItem("token") || "",
                 }
             }
-            const res = await axios.post(`http://localhost:5000/api/auth/createuser`, data, options)
+            const res = await axios.post(`https://mern-app-notes-server.onrender.com/api/auth/createuser`, data, options)
             
             localStorage.setItem("token", res.data.authToken);
 
