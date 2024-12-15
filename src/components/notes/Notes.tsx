@@ -40,7 +40,7 @@ const Notes = () => {
 
       <div className="container">
         <div className="flex items-center justify-between mt-10 mb-4">
-          <Heading title="DevNotes" description="Your notes on the cloud" />
+          <Heading title="Notes" description="Your notes on the cloud" />
           <Button onClick={() => openModal(null)} size="sm" className="hidden sm:block">
             Add a Note
           </Button>

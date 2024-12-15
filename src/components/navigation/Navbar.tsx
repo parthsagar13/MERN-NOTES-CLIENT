@@ -18,8 +18,8 @@ const Navbar = () => {
         <div className='flex items-center justify-between h-full px-3 mx-auto md:px-1 max-w-screen-3xl md:gap-20'>
           <div className=' text-[2.2rem] text duration-500 font-semibold group cursor-pointer'>
             <p className='animatedHeading font-signature'>
-              <span className='text-transparent'>Dev</span>
-              <span className='text-transparent'>Notes</span>
+              <span className='text-transparent'>Neo</span>
+              <span className='text-transparent'>Jot</span>
             </p>
           </div>
           <Navigation ulClass="hidden md:flex flex-1 justify-between"/>

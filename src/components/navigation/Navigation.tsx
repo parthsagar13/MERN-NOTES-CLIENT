@@ -16,11 +16,11 @@ const navLinks = [
         name: "TextUtils",
         link: "/textutils"
     },
-    {
-        id: 3,
-        name: "About",
-        link: "/about"
-    },
+    // {
+    //     id: 3,
+    //     name: "About",
+    //     link: "/about"
+    // },
 ];
 
 interface NavigationProps {
